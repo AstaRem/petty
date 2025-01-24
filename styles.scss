@@ -21,10 +21,11 @@ $letter-gradient-dark: #FF4265;
 $button-gradient-light: #FF5A37;
 $button-gradient-dark: #FF3778;
 $background-gradient-light: #62005F;
+$background-gradient-medium: #180019;
 $background-gradient-dark: #040006;
 $dog-bacgr-gradient-light: #5B0E4E;
 $dog-bacgr-gradient-dark: #140119;
-$dog-shadow-color: #BA92A7; //??
+// $dog-shadow-color: #BA92A7; //??
 
 // general
 body {
@@ -36,7 +37,7 @@ body {
 }
 
 .outer-container {
-    background-image: linear-gradient( to right, $background-gradient-dark, $background-gradient-light);
+    background-image: linear-gradient( 45deg, $background-gradient-dark, $background-gradient-light);
     display: flex;
     justify-content: center;
 }
@@ -81,24 +82,54 @@ header {
         li {
             padding-right: 20px;
             padding-left: 20px;
+            display: flex;
 
-            .paw-img {
-                // display: inline-block;
+            .arrow{
+                display: inline-block;
+                        img {
+                    width: 100%;
+                    height: auto;
+                    align-self: center;
+                    margin-bottom: -4px;
+                }
+            }
+
+            .paw {
+                width: 15px;
+                height: auto;
+                display: inline-block;
                 display: none;
             }
-            //NOT WORKING YET
-            a:hover {
-                font-size: 600;
+            .paw-img {
+                // display: none;
+                margin-right: 5px;
             }
-
+            .nav-link {
+                display: block;
+            }
         }
 
         li:nth-child(6){
-            padding-left: 50px;
-            padding-right: 0;
+            margin-left: 100px;
+            margin-right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
         }
     }
 }
+
+header  nav  ul li:hover .paw {
+                display: block;
+            }
+
+header  nav  ul li:hover .nav-link {
+                font-weight: 600;
+            }
+
+
 
 // main 
 main{
@@ -122,13 +153,17 @@ main{
         }
         h1 {
             font-size: 52px;
-            font-weight: 400;
+            font-weight: 300;
+            letter-spacing: 3px;
             span.h1-highlight-1, span.h1-highlight-2  {
                 font-weight: 900;
                 background:linear-gradient(45deg, $letter-gradient-light, $letter-gradient-dark);
                 -webkit-background-clip: text; /* Clips the background to the text */
                 -webkit-text-fill-color: transparent; /* Makes the text itself transparent */
             }
+        }
+        p.main-text {
+            line-height: 2;
         }
 
 
@@ -166,7 +201,7 @@ main{
     border-radius: 50% 50% 0 0;
     padding: 10px 10px 0 30px;
     margin-left: 50px;
-    box-shadow: 0 0 50px rgba(245, 197, 24, 0.1);
+    box-shadow: 0 0 70px 40px rgba(168, 145, 59, 0.2);
     .main-img-container {
         display:flex;
         flex-direction: column;
