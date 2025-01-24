@@ -134,8 +134,8 @@ header  nav  ul li:hover .nav-link {
 // main 
 main{
     display:flex;
-    
 }
+
 
 .main-text-wrapper {
     width: 50%;
@@ -243,4 +243,18 @@ main{
     }
 
 }
+
+@media screen and (max-width: 1230px){
+    main {
+        flex-direction: column;
+    }
+    .main-text-wrapper {
+        width: 100%;
+    }
+    .main-img-wrapper {
+        width: 80%;
+    }
+}
+
+
 
