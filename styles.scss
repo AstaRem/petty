@@ -1,5 +1,18 @@
 
 
+//fonts
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+// .inter-<uniquifier> {
+//     font-family: "Inter", serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+//   }
+
+
 //colors
 $hover-paw-color: #FD653D;
 $white-text: #FFFFFF;
@@ -11,3 +24,137 @@ $background-gradient-light: #62005F;
 $background-gradient-dark: #040006;
 $dog-bacgr-gradient-light: #5B0E4E;
 $dog-bacgr-gradient-dark: #140119;
+$dog-shadow-color: #BA92A7; //??
+
+// general
+body {
+    font-family: "Inter", serif; 
+    padding: 0;
+    margin: 0;
+    color: $white-text;
+    box-sizing: border-box;
+}
+
+.outer-container {
+    background-image: linear-gradient( to right, $background-gradient-dark, $background-gradient-light);
+    display: flex;
+    justify-content: center;
+}
+
+.page-wrapper {
+    // margin: auto;
+    width: 1100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $white-text;
+}
+
+// header
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin: 30px 0;
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    ul.nav-list {
+        display: flex;
+        li {
+            padding-right: 20px;
+            padding-left: 20px;
+
+            .paw-img {
+                // display: inline-block;
+                display: none;
+            }
+            //NOT WORKING YET
+            a:hover {
+                font-size: 600;
+            }
+
+        }
+
+        li:nth-child(6){
+            padding-left: 50px;
+            padding-right: 0;
+        }
+    }
+}
+
+// main 
+main{
+    display:flex;
+}
+
+.main-text-wrapper {
+    width: 50%;
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        .welcome {
+            font-size: 18px;
+            font-weight: 600;
+            background:linear-gradient(45deg, $letter-gradient-light, $letter-gradient-dark);
+            -webkit-background-clip: text; /* Clips the background to the text */
+            -webkit-text-fill-color: transparent; /* Makes the text itself transparent */
+        }
+        h1 {
+            font-size: 52px;
+            font-weight: 400;
+            span.h1-highlight-1, span.h1-highlight-2  {
+                font-weight: 900;
+                background:linear-gradient(45deg, $letter-gradient-light, $letter-gradient-dark);
+                -webkit-background-clip: text; /* Clips the background to the text */
+                -webkit-text-fill-color: transparent; /* Makes the text itself transparent */
+            }
+        }
+
+
+    }
+    .btn-container {
+        display: flex;
+        align-items: center;
+        .services-link {
+            background-image: linear-gradient(to right, $button-gradient-light, $button-gradient-dark);
+            width: 120px;
+            height: 30px; 
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 40px;
+            a {
+                line-height: 30px;
+            }
+        }
+        .call-link {
+            padding-left: 20px;
+            a{
+                line-height: 40px;
+                text-decoration: underline;
+
+            }
+        }
+    }
+}
+.main-img-wrapper {
+    width: 50%;
+}
+

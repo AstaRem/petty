@@ -6,15 +6,13 @@ https://www.figma.com/design/waB2AGPXfKITC376z0GeFA/Petty--%F0%9F%90%B6-(Copy)?n
 # Tasks
 
 ## To do
-- gitHub repository
-- basic html
+
+
 
 
 
 
 ## In Progress
-- wireframe - paper, plan elements
-
 
 
 
@@ -22,8 +20,9 @@ https://www.figma.com/design/waB2AGPXfKITC376z0GeFA/Petty--%F0%9F%90%B6-(Copy)?n
 
 - file structue
 - gather fonts, colors, images from the design, save to relevant places
-
-
+- create gitHub repository
+- wireframe - paper, plan elements
+- basic html
 
 
 xxxxxxxxxxxxxx
