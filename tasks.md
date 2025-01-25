@@ -6,7 +6,9 @@ https://www.figma.com/design/waB2AGPXfKITC376z0GeFA/Petty--%F0%9F%90%B6-(Copy)?n
 # Tasks
 
 ## To do
-
+- make background extend to bottom on small screens
+- header section on smaller screens
+- main section on smaller screens
 
 
 
